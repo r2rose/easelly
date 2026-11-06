@@ -1,0 +1,33 @@
+<!-- registration page -->
+<!-- doctype declaration - lets browser know what document type to expect -->
+<!DOCTYPE html>
+<!-- html opening tag - all html code for the page needs to go inside these tags; the language has also been set to english -->
+<html lang="en">
+<!-- declare metadata -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easelly - Register</title>
+</head>
+<body>
+    <!-- registration page heading -->
+    <h2>Register for Easelly</h2>
+    <!-- wrap input fields in a form element, and set the action to send the form to the /register endpoint using method POST -->
+    <form action="/register" method="POST">
+        <!-- username input field -->
+        <label for="username">Username</label><br>
+        <input type="text" name="username" id="username" size="20" required><br><br>
+
+        <!-- email input field -->
+        <label for="email">E-mail</label><br>
+        <input type="email" name="email" id="email" size="30" required><br><br>
+
+        <!-- password input field -->
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" size="30" required><br><br>
+
+        <!-- register action button -->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
